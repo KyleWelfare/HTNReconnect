@@ -1,11 +1,325 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script src="../js/results.js"></script>
-  </body>
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>
+		<meta charset="UTF-8"> 
+		<title> Reconnect </title>  
+      <link rel="stylesheet" href="../css/results.css" type="text/css"> 
+      <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Noto+Sans+JP&display=swap" rel="stylesheet"> -->
+      <link rel="preconnect" href="https://fonts.gstatic.com"> 
+      <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+	</head> 
+	<body>
+        <header>
+
+        </header>
+        <div id="container"> 
+            <p id="result"> We recommend... </p>
+
+            <!--  G A M E S -->
+            <div class="categories">
+                <h2> Games </h2>
+                <div id="games" class="wrapper">
+                    <a id="codenames" class="cards" href="https://codenames.game" target="_blank" >
+                        <div class="base">
+                            <img src="../images/codenames.png" alt="Error" width="145px" height="70px">    
+                            <h3> Codenames Online </h3>
+                            <p> A fun guessing game for all ages! </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="skribblio" class="cards" href="https://skribbl.io" target="_blank" >
+                        <div class="base">
+                            <img src="../images/skrib.jpg" alt="Error" width="135px" height="70px">
+                            <h3> Skribbl.io </h3>
+                            <p> Want to put your artistic side to the test? Skribbl.io is the game for you! </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="amongus" class="cards" href="https://store.steampowered.com/app/945360/Among_Us/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/amongus.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Among Us </h3>
+                            <p> Be a crewmate or an imposter. Save your team or sabotage. </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="golf" class="cards" href="https://store.steampowered.com/app/431240/Golf_With_Your_Friends/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/golf.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Golf With Your Friends </h3>
+                            <p> ---golf with your friends description--- </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="fallguys" class="cards" href="https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/fallguys.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Fall Guys </h3>
+                            <p> ---fall guys description--- </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="sporcle" class="cards" href="https://www.sporcle.com" target="_blank" >
+                        <div class="base">
+                            <img src="../images/sporcle.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Sporcle Quizzes </h3>
+                            <p> --- description--- </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <div id="trivia" class="cards" >
+                        <div class="base">
+                            <img src="../images/trivia.png" alt="Error" width="140px" height="70px">
+                            <h3> Trivia via Zoom </h3>
+                            <p> --- description--- </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </div>
+                    <a id="overcooked" class="cards" href="https://store.steampowered.com/app/728880/Overcooked_2/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/overcooked.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Overcooked 2 </h3>
+                            <p> ---description--- </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- E X E R C I S E S -->
+            <div class="categories">
+                <h2> Exercises </h2>
+                <div id="exercises" class="wrapper">
+                    <a id="codenames" class="cards" href="https://codenames.game" target="_blank" >
+                        <div class="base">
+                            <img src="../images/codenames.png" alt="Error" width="145px" height="70px">    
+                            <h3> Codenames Online </h3>
+                            <p> A fun guessing game for all ages! </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="skribblio" class="cards" href="https://skribbl.io" target="_blank" >
+                        <div class="base">
+                            <img src="../images/skrib.jpg" alt="Error" width="135px" height="70px">
+                            <h3> Skribbl.io </h3>
+                            <p> Want to put your artistic side to the test? Skribbl.io is the game for you! </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="amongus" class="cards" href="https://store.steampowered.com/app/945360/Among_Us/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/amongus.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Among Us </h3>
+                            <p> Be a crewmate or an imposter. Save your team or sabotage. </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="golf" class="cards" href="https://store.steampowered.com/app/431240/Golf_With_Your_Friends/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/golf.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Golf With Your Friends </h3>
+                            <p> ---golf with your friends description--- </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="fallguys" class="cards" href="https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/fallguys.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Fall Guys </h3>
+                            <p> ---fall guys description--- </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- C O O K I N G -->
+            <div class="categories">
+                <h2> Cooking </h2>
+                <div id="cooking" class="wrapper">
+                    <a id="codenames" class="cards" href="https://codenames.game" target="_blank" >
+                        <div class="base">
+                            <img src="../images/codenames.png" alt="Error" width="145px" height="70px">    
+                            <h3> Codenames Online </h3>
+                            <p> A fun guessing game for all ages! </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="skribblio" class="cards" href="https://skribbl.io" target="_blank" >
+                        <div class="base">
+                            <img src="../images/skrib.jpg" alt="Error" width="135px" height="70px">
+                            <h3> Skribbl.io </h3>
+                            <p> Want to put your artistic side to the test? Skribbl.io is the game for you! </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="amongus" class="cards" href="https://store.steampowered.com/app/945360/Among_Us/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/amongus.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Among Us </h3>
+                            <p> Be a crewmate or an imposter. Save your team or sabotage. </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="golf" class="cards" href="https://store.steampowered.com/app/431240/Golf_With_Your_Friends/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/golf.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Golf With Your Friends </h3>
+                            <p> ---golf with your friends description--- </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="fallguys" class="cards" href="https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/fallguys.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Fall Guys </h3>
+                            <p> ---fall guys description--- </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- M O V I E S /  S H O W S -->
+            <div class="categories">
+                <h2> Movies/TV </h2>
+                <div id="movies" class="wrapper">
+                    <a id="codenames" class="cards" href="https://codenames.game" target="_blank" >
+                        <div class="base">
+                            <img src="../images/codenames.png" alt="Error" width="145px" height="70px">    
+                            <h3> Codenames Online </h3>
+                            <p> A fun guessing game for all ages! </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="skribblio" class="cards" href="https://skribbl.io" target="_blank" >
+                        <div class="base">
+                            <img src="../images/skrib.jpg" alt="Error" width="135px" height="70px">
+                            <h3> Skribbl.io </h3>
+                            <p> Want to put your artistic side to the test? Skribbl.io is the game for you! </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="amongus" class="cards" href="https://store.steampowered.com/app/945360/Among_Us/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/amongus.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Among Us </h3>
+                            <p> Be a crewmate or an imposter. Save your team or sabotage. </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="golf" class="cards" href="https://store.steampowered.com/app/431240/Golf_With_Your_Friends/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/golf.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Golf With Your Friends </h3>
+                            <p> ---golf with your friends description--- </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                    <a id="fallguys" class="cards" href="https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/" target="_blank" >
+                        <div class="base">
+                            <img src="../images/fallguys.jpg" alt="Error" width="140px" height="70px">
+                            <h3> Fall Guys </h3>
+                            <p> ---fall guys description--- </p>
+                        </div>
+                        <div class="details">  
+                            <!-- <h3> Details </h3> -->
+                            <p> <b>Age range:</b> All ages</p>
+                            <p><b>Price: </b> Free</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div> 
+    </body>
 </html>

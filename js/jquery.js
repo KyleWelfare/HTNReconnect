@@ -1,7 +1,7 @@
-$("#js-range-slider").ionRangeSlider({
+$("#age-range-slider").ionRangeSlider({
   min: 0,
   max: 60,
-  from: 8,
+  from: 0,
   to: 25,
   type: "double",
   max_postfix: "+",
@@ -9,9 +9,9 @@ $("#js-range-slider").ionRangeSlider({
   skin: "flat",
 });
 
-$("#js-range-slider2").ionRangeSlider({
+$("#cost-range-slider").ionRangeSlider({
   min: 0,
-  max: 60,
+  max: 100,
   from: 8,
   to: 25,
   type: "double",
