@@ -31,6 +31,7 @@ body {
   height: 40vh;
   color: rgba(39, 37, 37, 0.842);
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 4em;
@@ -66,9 +67,13 @@ body {
   align-items: center;
 }
 
+.form-header {
+  font-style: italic;
+}
+
 .form-card {
   border: 2px solid rgba(99, 98, 98, 0.658);
-  box-shadow: 5px 5px rgba(92, 90, 90, 0.452);
+  box-shadow: 5px 5px rgba(121, 116, 116, 0.4);
   border-radius: 0.4em;
   width: 40vw;
   padding: 1em 0.8em;
@@ -80,9 +85,10 @@ body {
 
 .form-card h5 {
   font-size: 2rem;
+  padding-top: 2rem;
 }
 
-.form-card > p {
+div > p {
   margin-bottom: 2em;
 }
 
@@ -91,86 +97,133 @@ select {
   text-align: center;
   background: rgba(244, 162, 97, 0.4);
   border-radius: 0.4em;
-  width: 70%;
-  align-self: center;
+  width: 20%;
+  height: 3rem;
+  font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: border 100ms ease;
+}
+
+select:hover {
+  border: 2px solid black;
+}
+
+option {
+  font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 #submit-btn {
   margin: 50px 0 80px 0;
-  max-width: 20%;
-  min-width: 10vw;
+  /* max-width: 20%; */
+  /* min-width: 20vw; */
   background: rgba(244, 162, 97, 1);
   border: none;
   border-radius: 0.4rem;
-}
-
-button > p {
+  text-align: center;
   font-size: 1.7rem;
   font-weight: bold;
-  padding: 3rem;
+  padding: 4rem;
+  font-family: "Roboto", sans-serif;
+  transition: border, padding 250ms ease-in-out;
+}
+
+#submit-btn:hover {
+  background: rgba(244, 162, 97, 1);
+  border: 3px solid rgb(240, 128, 36);
+  padding: 4.3rem;
+  font-size: 1.9rem;
+  transition: font-size 500ms ease;
 }
 
 /* categories styling */
 
 .category {
-  margin-bottom: 2rem;
+  margin-bottom: auto 0;
 }
 
 .category label {
   font-size: 2.5rem;
   font-weight: bold;
+  padding-left: 2rem;
 }
 
-.game-genre-items {
+#game-genre-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
   align-self: center;
   width: 90%;
+  display: none;
+  padding-top: 2rem;
 }
 
 .game-genre-item {
   padding-bottom: 2rem;
-  display: inline-block;
 }
 
-.mov-tv-genre-items {
+#mov-tv-genre-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
   align-self: center;
   width: 90%;
+  display: none;
+  padding-top: 2rem;
 }
 
 .mov-tv-genre-item {
   padding-bottom: 2rem;
-  display: inline-block;
 }
 
+.exer-types-container {
+  display: none;
+}
 .exer-types {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1em;
   justify-content: space-around;
 }
 
+.exer-type {
+  padding-bottom: 2rem;
+}
+
+.meal-types-container {
+  display: none;
+}
 .meal-types {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
   align-self: center;
   width: 90%;
+  padding-top: 2rem;
 }
 .meal-type {
   padding-bottom: 2rem;
-  display: inline-block;
 }
 
 /* range styling */
 
-.range-slider {
+.age-range-slider {
   width: 80%;
   /* margin-bottom: 3em; */
   align-self: center;
 }
-#js-range-slider {
-  max-width: 30vw;
-  background: green;
+
+.cost-range-container {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.cost-range-slider {
+  width: 80%;
+  /* margin-bottom: 3em; */
+  align-self: center;
 }
 
 .irs--flat .irs-handle > i:first-child {
@@ -188,4 +241,60 @@ button > p {
 .irs--flat .irs-to:before,
 .irs--flat .irs-single:before {
   border-top-color: rgba(244, 162, 97, 1) !important;
+}
+
+/* responsivenessstyling */
+
+@media screen and (max-width: 1200px) {
+  .form-card {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .form-card {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .meal-types {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .exer-types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #game-genre-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #mov-tv-genre-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .meal-types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .exer-types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  select {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #game-genre-items {
+    grid-template-columns: 1fr;
+  }
+  #mov-tv-genre-items {
+    grid-template-columns: 1fr;
+  }
+  .meal-types {
+    grid-template-columns: 1fr;
+  }
+  .exer-types {
+    grid-template-columns: 1fr;
+  }
 }
