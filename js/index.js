@@ -1,24 +1,7 @@
-//games dropdown
-// let gamesCheckbox = document.getElementById("games");
-// let gamesSubForm = document.getElementById("games-genre-items");
+/* index.js built by Kyle Welfare on 01/16/2021 for Hack The North 2020++. Provides simple js functions
+for index.html of Reconnect Web App */
 
-// if (gamesCheckbox.checked) {
-//   gamesSubForm.style.display = "block";
-// } else {
-//   gamesSubForm.style.display = "none";
-// }
-
-// $(function () {
-//   $("#games").click(function (event) {
-//     var x = $(this).is(":checked");
-//     if (x == true) {
-//       $(this).parents(".form-card").find(".game-genre-items").show();
-//     } else {
-//       $(this).parents(".form-card").find(".game-genre-items").hide();
-//     }
-//   });
-// });
-
+// expand form components on checkbox click
 function showHideGames(checked) {
   if (checked) {
     $("#game-genre-items").fadeIn(700);
@@ -70,6 +53,16 @@ function showHideMovTVGenres(checked) {
   }
 }
 
+//scroll indicator arrow control
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 0) {
+    document.getElementById("scroll-arrow").style.visibility = "hidden";
+  } else {
+    document.getElementById("scroll-arrow").style.visibility = "visible";
+  }
+});
+
+//ion Custom Range Slider formatting
 $("#age-range-slider").ionRangeSlider({
   min: 0,
   max: 60,

@@ -19,11 +19,39 @@
   <body>
     <div class="container">
       <section class="intro-container">
+        <div class="intro-header">Welcome to Reconnect!</div>
+        <img
+          src="../images/intro-image.png"
+          alt="intro-img"
+          class="intro-image"
+        />
+        <div class="intro-descrip">
+          <p>
+            Times are tough. But as we push forward, we find ways to adapt.
+            Luckily for us, we live in a time where limitless potential lies at
+            our fingertips. Smartphones, tablets, personal computers, they are
+            what get us through the trying times, because they allow us to
+            connect with others. At Reconnect, our goal is to encourage and
+            spread this connection. Even when we’re stuck at home, there are so
+            many opportunities to better ourselves, spend time with our loved
+            ones, and learn new things.
+          </p>
+          <p>
+            Take a few minutes to fill out the form below. We’ll provide you
+            with a list of recommendations for fun, educational, exciting, or
+            collaborative activities you can do from the comfort of your own
+            home! Take some time to reconnect with friends, family, and
+            yourself, you deserve it!
+          </p>
+        </div>
         <div class="logo-container">
           <img src="../images/logo.png" alt="reconnect-logo" class="logo" />
-        </div>
-        <div class="intro-descrip">
-          <h4>Quote goes here</h4>
+          <a
+            class="ca3-scroll-down-link ca3-scroll-down-arrow"
+            data-ca3_iconfont="ETmodules"
+            data-ca3_icon=""
+            id="scroll-arrow"
+          ></a>
         </div>
       </section>
       <section class="form-container">
@@ -87,10 +115,10 @@
                 <input
                   type="checkbox"
                   name="game-genres"
-                  id="comedy"
-                  value="comedy"
+                  id="comedy-game"
+                  value="comedy-game"
                 />
-                <label for="comedy">Comedy</label>
+                <label for="comedy-game">Comedy</label>
               </div>
               <div class="game-genre-item">
                 <input
@@ -141,10 +169,10 @@
                 <input
                   type="checkbox"
                   name="game-genres"
-                  id="violent"
-                  value="violent"
+                  id="gore"
+                  value="gore"
                 />
-                <label for="violent">Violent</label>
+                <label for="gore">Gore</label>
               </div>
               <div class="game-genre-item">
                 <input
@@ -244,7 +272,7 @@
                     id="cardio"
                     value="cardio"
                   />
-                  <label for="adventure">Cardiovascular</label>
+                  <label for="cardio">Cardiovascular</label>
                 </div>
                 <div class="exer-type">
                   <input
@@ -253,7 +281,7 @@
                     id="str"
                     value="str"
                   />
-                  <label for="adventure">Strength</label>
+                  <label for="str">Strength</label>
                 </div>
                 <div class="exer-type">
                   <input
@@ -262,7 +290,7 @@
                     id="flex"
                     value="flex"
                   />
-                  <label for="adventure">Flexibility</label>
+                  <label for="flex">Flexibility</label>
                 </div>
                 <div class="exer-type">
                   <input
@@ -271,7 +299,7 @@
                     id="balance"
                     value="balance"
                   />
-                  <label for="adventure">Balance</label>
+                  <label for="balance">Balance</label>
                 </div>
               </div>
             </div>
@@ -377,7 +405,7 @@
                 id="mov-tv"
                 onchange="showHideMovTVGenres(this.checked)"
               />
-              <label for="games">Movies and TV</label>
+              <label for="mov-tv">Movies and TV</label>
             </div>
             <div id="mov-tv-genre-items">
               <div class="mov-tv-genre-item">
