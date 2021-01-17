@@ -32,7 +32,7 @@ function showHideGames(checked) {
   }
 }
 
-function showHideGames(checked) {
+function showHideGameGenres(checked) {
   if (checked) {
     $("#game-genre-items").fadeIn(600);
     document.getElementById("game-genre-items").style.display = "grid";
@@ -52,3 +52,42 @@ function showHideExercises(checked) {
     $(".exer-types-container").fadeOut(300);
   }
 }
+
+function showHideMealTypes(checked) {
+  if (checked) {
+    $(".meal-types-container").fadeIn(600);
+  } else {
+    $(".meal-types-container").fadeOut(300);
+  }
+}
+
+function showHideMovTVGenres(checked) {
+  if (checked) {
+    $("#mov-tv-genre-items").fadeIn(600);
+    document.getElementById("mov-tv-genre-items").style.display = "grid";
+  } else {
+    $("#mov-tv-genre-items").fadeOut(300);
+  }
+}
+
+$("#age-range-slider").ionRangeSlider({
+  min: 0,
+  max: 60,
+  from: 0,
+  to: 25,
+  type: "double",
+  max_postfix: "+",
+  postfix: " years",
+  skin: "flat",
+});
+
+$("#cost-range-slider").ionRangeSlider({
+  min: 0,
+  max: 100,
+  from: 0,
+  to: 30,
+  type: "double",
+  max_postfix: "+",
+  prefix: "$",
+  skin: "flat",
+});

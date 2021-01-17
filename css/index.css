@@ -31,6 +31,7 @@ body {
   height: 40vh;
   color: rgba(39, 37, 37, 0.842);
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 4em;
@@ -66,9 +67,13 @@ body {
   align-items: center;
 }
 
+.form-header {
+  font-style: italic;
+}
+
 .form-card {
   border: 2px solid rgba(99, 98, 98, 0.658);
-  box-shadow: 5px 5px rgba(92, 90, 90, 0.452);
+  box-shadow: 5px 5px rgba(121, 116, 116, 0.4);
   border-radius: 0.4em;
   width: 40vw;
   padding: 1em 0.8em;
@@ -80,6 +85,7 @@ body {
 
 .form-card h5 {
   font-size: 2rem;
+  padding-top: 2rem;
 }
 
 div > p {
@@ -121,7 +127,7 @@ option {
   font-weight: bold;
   padding: 4rem;
   font-family: "Roboto", sans-serif;
-  transition: border, padding 250ms ease;
+  transition: border, padding 250ms ease-in-out;
 }
 
 #submit-btn:hover {
@@ -135,56 +141,70 @@ option {
 /* categories styling */
 
 .category {
-  margin-bottom: 2rem;
+  margin-bottom: auto 0;
 }
 
 .category label {
   font-size: 2.5rem;
   font-weight: bold;
+  padding-left: 2rem;
 }
 
 #game-genre-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
   align-self: center;
   width: 90%;
   display: none;
+  padding-top: 2rem;
 }
 
 .game-genre-item {
   padding-bottom: 2rem;
-  display: inline-block;
 }
 
-.mov-tv-genre-items {
+#mov-tv-genre-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
   align-self: center;
   width: 90%;
+  display: none;
+  padding-top: 2rem;
 }
 
 .mov-tv-genre-item {
   padding-bottom: 2rem;
-  display: inline-block;
 }
 
 .exer-types-container {
   display: none;
 }
 .exer-types {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1em;
   justify-content: space-around;
 }
 
+.exer-type {
+  padding-bottom: 2rem;
+}
+
+.meal-types-container {
+  display: none;
+}
 .meal-types {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
   align-self: center;
   width: 90%;
+  padding-top: 2rem;
 }
 .meal-type {
   padding-bottom: 2rem;
-  display: inline-block;
 }
 
 /* range styling */
@@ -196,6 +216,8 @@ option {
 }
 
 .cost-range-container {
+  display: flex;
+  flex-direction: column;
   display: none;
 }
 .cost-range-slider {
@@ -219,4 +241,60 @@ option {
 .irs--flat .irs-to:before,
 .irs--flat .irs-single:before {
   border-top-color: rgba(244, 162, 97, 1) !important;
+}
+
+/* responsivenessstyling */
+
+@media screen and (max-width: 1200px) {
+  .form-card {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .form-card {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .meal-types {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .exer-types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #game-genre-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #mov-tv-genre-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .meal-types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .exer-types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  select {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #game-genre-items {
+    grid-template-columns: 1fr;
+  }
+  #mov-tv-genre-items {
+    grid-template-columns: 1fr;
+  }
+  .meal-types {
+    grid-template-columns: 1fr;
+  }
+  .exer-types {
+    grid-template-columns: 1fr;
+  }
 }
