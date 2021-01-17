@@ -1,6 +1,13 @@
 /* index.js built by Kyle Welfare on 01/16/2021 for Hack The North 2020++. Provides simple js functions
 for index.html of Reconnect Web App */
 
+//clear form inputs on load
+$(window).bind("pageshow", function () {
+  var form = $("form");
+  // let the browser natively reset defaults
+  form[0].reset();
+});
+
 // expand form components on checkbox click
 function showHideGames(checked) {
   if (checked) {

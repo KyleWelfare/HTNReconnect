@@ -9,8 +9,15 @@ body {
 header {
   width: 100%;
   height: 15vh;
-  background-color: rgb(245, 255, 136);
+  background-color: #fed9b7;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 12vh;
 }
 /* h1 {
   text-align: center;
@@ -137,7 +144,7 @@ img {
   /* margin-right: 14px;  */
 }
 .details {
-  display: block;
+  display: none;
   position: relative;
   font-family: "Karla", sans-serif;
   padding: 14px;
@@ -159,6 +166,7 @@ img {
   height: 180px;
   /* margin: 14px; */
   float: left;
+  margin-left: 15px;
 }
 .price {
   font-size: 12px;
