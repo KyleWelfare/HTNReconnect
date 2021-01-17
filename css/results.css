@@ -144,7 +144,7 @@ img {
   /* margin-right: 14px;  */
 }
 .details {
-  display: none;
+  display: block;
   position: relative;
   font-family: "Karla", sans-serif;
   padding: 14px;
@@ -166,7 +166,7 @@ img {
   height: 180px;
   /* margin: 14px; */
   float: left;
-  margin-left: 15px;
+  /* margin-left: 15px;  */
 }
 .price {
   font-size: 12px;
