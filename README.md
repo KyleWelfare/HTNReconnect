@@ -32,6 +32,9 @@ More comprehensive form to improve specificity, variety, and accuracy of results
 ## Team
 
 Kyle Welfare - Front-End Development (HTML, CSS, Javascript, jQuery)
+
 Adem Boussetha - Back-End Development and Database (Node.js, mongoDB)
+
 Lina Ismail - Front-End Development and Design (HTML, CSS, Javascript, Figma)
+
 Hailey Park - UI/UX Design (Figma)

@@ -85,7 +85,7 @@ header {
 }
 /* CARDS LAYOUT */
 .cards {
-  display: block;
+  display: none;
   width: 455px;
   height: 100px;
   margin: 0px 14px 0px 14px;
@@ -252,3 +252,19 @@ fig img:hover{
   grid-gap: 14px;
   margin: 14px;
 } */
+
+#games {
+  display: none;
+}
+
+#exercises {
+  display: none;
+}
+
+#cooking {
+  display: none;
+}
+
+#movies {
+  display: none;
+}
