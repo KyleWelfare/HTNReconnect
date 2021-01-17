@@ -5,7 +5,8 @@ const app =express();
 dotenv.config()
 //Importing Routes
 const homeRoute= require("./routes/home")
-const bodyParser = require('body-parser')
+app.set('view engine', 'ejs');
+app.use('/public',express.static('public'))
 
 //connect to DB
 mongoose.connect(process.env.DB_CONNECT, {useNewUrlParser: true,useUnifiedTopology: true}, () => {
@@ -15,9 +16,9 @@ mongoose.connect(process.env.DB_CONNECT, {useNewUrlParser: true,useUnifiedTopolo
 //Middlewares
 app.use(express.urlencoded({extended:true}));
 app.use(express.json())
-// app.use(bodyParser.json())
+
 //Import middlewares
-app.use('/api', homeRoute);
+app.use('/', homeRoute);
 
 
 app.listen(process.env.PORT,()=>{
