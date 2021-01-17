@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Plugin CSS file with desired skin-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <link rel="stylesheet" href="../public/css/index.css" />
+    <title>Reconnect - Bringing People Back Together</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="intro-container">
+        <div class="logo-container">
+          <img src="../public/images/logo.png" alt="reconnect-logo" class="logo" />
+        </div>
+        <div class="intro-descrip">
+          <h2>Our Vision</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            cupiditate odit ea incidunt quaerat molestias ab deleniti sequi
+            repellat maiores dolor quis accusantium quo magni iusto officiis,
+            nemo, impedit delectus natus aspernatur dolore corporis voluptate
+            inventore! Adipisci maiores ipsum eum excepturi aut omnis pariatur
+            numquam ad dicta rerum, consequuntur debitis delectus nostrum saepe
+            reiciendis facilis nesciunt, nisi quis. Animi, provident?
+            Consequatur, earum. Itaque illo quidem in, ipsam eos veritatis
+            cumque nesciunt cupiditate labore voluptate, porro fugit nihil,
+            dolorem qui? Quae, possimus. Minima blanditiis debitis doloremque.
+            Voluptate, veritatis quisquam eum explicabo maxime quas eaque
+            architecto iste iure ducimus provident. Tempora, distinctio!
+          </p>
+        </div>
+      </section>
+      <section class="form-container">
+        <h1 class="form-header">Form Title</h1>
+        <form action="/submitresults" method="POST" id="form">
+          <div class="form-card">
+            <h5>Number of Participants</h5>
+            <p>Select the number of particpants</p>
+            <select name="participants" id="participants">
+              <option value="" disabled selected></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value=">16">16+</option>
+            </select>
+          </div>
+          <div class="form-card">
+            <h5>Age Range</h5>
+            <p>Select the age range of participants</p>
+            <div class="range-slider">
+              <input
+                type="text"
+                id="js-range-slider"
+                name="age_range"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="form-card">
+            <div class="category">
+              <input type="checkbox" name="games" id="games" />
+              <label for="games">Games</label>
+            </div>
+            <div class="game-genre-items">
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="adventure"
+                  value="adventure"
+                />
+                <label for="adventure">Adventure</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="comedy"
+                  value="comedy"
+                />
+                <label for="comedy">Comedy</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="strategy"
+                  value="strategy"
+                />
+                <label for="strategy">Strategy</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="action"
+                  value="action"
+                />
+                <label for="action">Action</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="cooking"
+                  value="cooking"
+                />
+                <label for="cooking">Cooking</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="sports"
+                  value="sports"
+                />
+                <label for="sports">Sports</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="battle-royale"
+                  value="battle-royale"
+                />
+                <label for="battle-royale">Battle Royale</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="violent"
+                  value="violent"
+                />
+                <label for="violent">Violent</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="survival"
+                  value="survival"
+                />
+                <label for="survival">Survival</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="casual"
+                  value="casual"
+                />
+                <label for="casual">Casual</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="indie"
+                  value="indie"
+                />
+                <label for="indie">Indie</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="swordplay"
+                  value="swordplay"
+                />
+                <label for="swordplay">Swordplay</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="cartoony"
+                  value="cartoony"
+                />
+                <label for="cartoony">Cartoony</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="psychological"
+                  value="psychological"
+                />
+                <label for="psychological">Psychological</label>
+              </div>
+              <div class="game-genre-item">
+                <input
+                  type="checkbox"
+                  name="game-genres"
+                  id="shooter"
+                  value="shooter"
+                />
+                <label for="shooter">Shooter</label>
+              </div>
+            </div>
+            <h5>Cost</h5>
+            <p>Please choose a cost range</p>
+            <div class="range-slider">
+              <input
+                type="text"
+                id="js-range-slider2"
+                name="cost_range"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="form-card">
+            <div class="category">
+              <input type="checkbox" name="exercises" id="exercises" />
+              <label for="exercise">Exercises</label>
+            </div>
+            <h5>Types of Exercises</h5>
+            <p>Please select the types of exercises you are interested in</p>
+            <div class="exer-types">
+              <div class="exer-type">
+                <input
+                  type="checkbox"
+                  name="exer-types"
+                  id="cardio"
+                  value="cardio"
+                />
+                <label for="adventure">Cardiovascular</label>
+              </div>
+              <div class="exer-type">
+                <input type="checkbox" name="exer-types" id="str" value="str" />
+                <label for="adventure">Strength</label>
+              </div>
+              <div class="exer-type">
+                <input
+                  type="checkbox"
+                  name="exer-types"
+                  id="flex"
+                  value="flex"
+                />
+                <label for="adventure">Flexibility</label>
+              </div>
+              <div class="exer-type">
+                <input
+                  type="checkbox"
+                  name="exer-types"
+                  id="balance"
+                  value="balance"
+                />
+                <label for="adventure">Balance</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-card">
+            <div class="category">
+              <input type="checkbox" name="cooking" id="cooking" />
+              <label for="exercise">Cooking</label>
+            </div>
+            <h5>Types of Meals</h5>
+            <p>
+              Please select the types of meals you are interested in cooking
+            </p>
+            <div class="meal-types">
+              <div class="meal-type">
+                <input
+                  type="checkbox"
+                  name="meal-types"
+                  id="breakfast"
+                  value="breakfast"
+                />
+                <label for="breakfast">Breakfast</label>
+              </div>
+              <div class="exer-type">
+                <input
+                  type="checkbox"
+                  name="meal-types"
+                  id="lunch"
+                  value="lunch"
+                />
+                <label for="lunch">Lunch</label>
+              </div>
+              <div class="exer-type">
+                <input
+                  type="checkbox"
+                  name="meal-types"
+                  id="dinner"
+                  value="dinner"
+                />
+                <label for="dinner">Dinner</label>
+              </div>
+              <div class="exer-type">
+                <input
+                  type="checkbox"
+                  name="meal-types"
+                  id="dessert"
+                  value="dessert"
+                />
+                <label for="dessert">Dessert</label>
+              </div>
+              <div class="exer-type">
+                <input
+                  type="checkbox"
+                  name="meal-types"
+                  id="nut-free"
+                  value="nut-free"
+                />
+                <label for="nut-free">Nut-Free</label>
+              </div>
+              <div class="exer-type">
+                <input
+                  type="checkbox"
+                  name="meal-types"
+                  id="gluten-free"
+                  value="gluten-free"
+                />
+                <label for="gluten-free">Gluten-Free</label>
+              </div>
+              <div class="exer-type">
+                <input
+                  type="checkbox"
+                  name="meal-types"
+                  id="dairy-free"
+                  value="dairy-free"
+                />
+                <label for="dairy-free">Dairy-Free</label>
+              </div>
+              <div class="exer-type">
+                <input
+                  type="checkbox"
+                  name="meal-types"
+                  id="vegan"
+                  value="vegan"
+                />
+                <label for="vegan">Vegan</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-card">
+            <div class="category">
+              <input type="checkbox" name="mov-tv" id="mov-tv" />
+              <label for="games">Movies and TV</label>
+            </div>
+            <div class="mov-tv-genre-items">
+              <div class="mov-tv-genre-item">
+                <input
+                  type="checkbox"
+                  name="mov-tv-genres"
+                  id="action"
+                  value="action"
+                />
+                <label for="action">Action</label>
+              </div>
+              <div class="mov-tv-genre-item">
+                <input
+                  type="checkbox"
+                  name="mov-tv-genres"
+                  id="horror"
+                  value="horror"
+                />
+                <label for="horror">Horror</label>
+              </div>
+              <div class="mov-tv-genre-item">
+                <input
+                  type="checkbox"
+                  name="mov-tv-genres"
+                  id="comedy"
+                  value="comedy"
+                />
+                <label for="comedy">Comedy</label>
+              </div>
+              <div class="mov-tv-genre-item">
+                <input
+                  type="checkbox"
+                  name="mov-tv-genres"
+                  id="drama"
+                  value="drama"
+                />
+                <label for="drama">Drama</label>
+              </div>
+              <div class="mov-tv-genre-item">
+                <input
+                  type="checkbox"
+                  name="mov-tv-genres"
+                  id="thriller"
+                  value="thriller"
+                />
+                <label for="thriller">Thriller</label>
+              </div>
+              <div class="mov-tv-genre-item">
+                <input
+                  type="checkbox"
+                  name="mov-tv-genres"
+                  id="sci-fi"
+                  value="sci-fi"
+                />
+                <label for="sci-fi">Sci-fi</label>
+              </div>
+              <div class="mov-tv-genre-item">
+                <input
+                  type="checkbox"
+                  name="mov-tv-genres"
+                  id="documentary"
+                  value="documentary"
+                />
+                <label for="documentary">Documentary</label>
+              </div>
+              <div class="mov-tv-genre-item">
+                <input
+                  type="checkbox"
+                  name="mov-tv-genres"
+                  id="romance"
+                  value="romance"
+                />
+                <label for="romance">Romance</label>
+              </div>
+              <div class="mov-tv-genre-item">
+                <input
+                  type="checkbox"
+                  name="mov-tv-genres"
+                  id="fantasy"
+                  value="fantasy"
+                />
+                <label for="fantasy">Fantasy</label>
+              </div>
+            </div>
+          </div>
+          <button id="submit-btn" onclick="sendData()">
+            <p>Recommend!</p>
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Plugin Jquery file -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+    <script src="../public/js/results.js"></script>
+    <script src="../public/js/jquery.js"></script>
+  </body>
+</html>
