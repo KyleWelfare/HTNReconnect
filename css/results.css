@@ -85,7 +85,7 @@ header {
 }
 /* CARDS LAYOUT */
 .cards {
-  display: none;
+  display: grid;
   width: 455px;
   height: 100px;
   margin: 0px 14px 0px 14px;
