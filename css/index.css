@@ -82,7 +82,7 @@ body {
   font-size: 2rem;
 }
 
-.form-card > p {
+div > p {
   margin-bottom: 2em;
 }
 
@@ -91,23 +91,45 @@ select {
   text-align: center;
   background: rgba(244, 162, 97, 0.4);
   border-radius: 0.4em;
-  width: 70%;
-  align-self: center;
+  width: 20%;
+  height: 3rem;
+  font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: border 100ms ease;
+}
+
+select:hover {
+  border: 2px solid black;
+}
+
+option {
+  font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 #submit-btn {
   margin: 50px 0 80px 0;
-  max-width: 20%;
-  min-width: 10vw;
+  /* max-width: 20%; */
+  /* min-width: 20vw; */
   background: rgba(244, 162, 97, 1);
   border: none;
   border-radius: 0.4rem;
-}
-
-button > p {
+  text-align: center;
   font-size: 1.7rem;
   font-weight: bold;
-  padding: 3rem;
+  padding: 4rem;
+  font-family: "Roboto", sans-serif;
+  transition: border, padding 250ms ease;
+}
+
+#submit-btn:hover {
+  background: rgba(244, 162, 97, 1);
+  border: 3px solid rgb(240, 128, 36);
+  padding: 4.3rem;
+  font-size: 1.9rem;
+  transition: font-size 500ms ease;
 }
 
 /* categories styling */
@@ -121,11 +143,12 @@ button > p {
   font-weight: bold;
 }
 
-.game-genre-items {
+#game-genre-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-self: center;
   width: 90%;
+  display: none;
 }
 
 .game-genre-item {
@@ -145,6 +168,9 @@ button > p {
   display: inline-block;
 }
 
+.exer-types-container {
+  display: none;
+}
 .exer-types {
   display: flex;
   justify-content: space-around;
@@ -163,14 +189,19 @@ button > p {
 
 /* range styling */
 
-.range-slider {
+.age-range-slider {
   width: 80%;
   /* margin-bottom: 3em; */
   align-self: center;
 }
-#js-range-slider {
-  max-width: 30vw;
-  background: green;
+
+.cost-range-container {
+  display: none;
+}
+.cost-range-slider {
+  width: 80%;
+  /* margin-bottom: 3em; */
+  align-self: center;
 }
 
 .irs--flat .irs-handle > i:first-child {

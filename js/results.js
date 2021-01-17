@@ -11,8 +11,6 @@ const ageRangeList = ageRange.match(/\d+/g);
 const minAge = parseInt(ageRangeList[0]);
 const maxAge = parseInt(ageRangeList[1]);
 
-// const minAge = parseInt(ageRange[])
-
 // category checks
 const wantsGames = urlParams.has("games");
 const wantsExercises = urlParams.has("exercises");

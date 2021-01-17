@@ -47,8 +47,7 @@
             <h5>Number of Participants</h5>
             <p>Select the number of particpants</p>
             <select name="participants" id="participants">
-              <option value="" disabled selected></option>
-              <option value="1">1</option>
+              <option value="1" selected>1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
@@ -69,10 +68,10 @@
           <div class="form-card">
             <h5>Age Range</h5>
             <p>Select the age range of participants</p>
-            <div class="range-slider">
+            <div class="age-range-slider">
               <input
                 type="text"
-                id="js-range-slider"
+                id="age-range-slider"
                 name="age_range"
                 value=""
               />
@@ -80,10 +79,15 @@
           </div>
           <div class="form-card">
             <div class="category">
-              <input type="checkbox" name="games" id="games" />
+              <input
+                type="checkbox"
+                name="games"
+                id="games"
+                onchange="showHideGames(this.checked)"
+              />
               <label for="games">Games</label>
             </div>
-            <div class="game-genre-items">
+            <div id="game-genre-items">
               <div class="game-genre-item">
                 <input
                   type="checkbox"
@@ -220,58 +224,73 @@
                 <label for="shooter">Shooter</label>
               </div>
             </div>
-            <h5>Cost</h5>
-            <p>Please choose a cost range</p>
-            <div class="range-slider">
-              <input
-                type="text"
-                id="js-range-slider2"
-                name="cost_range"
-                value=""
-              />
+            <div class="cost-range-container">
+              <h5>Cost</h5>
+              <p>Please choose a cost range</p>
+              <div class="cost-range-slider">
+                <input
+                  type="text"
+                  id="cost-range-slider"
+                  name="cost_range"
+                  value=""
+                />
+              </div>
             </div>
           </div>
           <div class="form-card">
             <div class="category">
-              <input type="checkbox" name="exercises" id="exercises" />
-              <label for="exercise">Exercises</label>
+              <input
+                type="checkbox"
+                name="exercises"
+                id="exercises"
+                onchange="showHideExercises(this.checked)"
+              />
+              <label for="exercises">Exercises</label>
             </div>
-            <h5>Types of Exercises</h5>
-            <p>Please select the types of exercises you are interested in</p>
-            <div class="exer-types">
-              <div class="exer-type">
-                <input
-                  type="checkbox"
-                  name="exer-types"
-                  id="cardio"
-                  value="cardio"
-                />
-                <label for="adventure">Cardiovascular</label>
-              </div>
-              <div class="exer-type">
-                <input type="checkbox" name="exer-types" id="str" value="str" />
-                <label for="adventure">Strength</label>
-              </div>
-              <div class="exer-type">
-                <input
-                  type="checkbox"
-                  name="exer-types"
-                  id="flex"
-                  value="flex"
-                />
-                <label for="adventure">Flexibility</label>
-              </div>
-              <div class="exer-type">
-                <input
-                  type="checkbox"
-                  name="exer-types"
-                  id="balance"
-                  value="balance"
-                />
-                <label for="adventure">Balance</label>
+            <div class="exer-types-container">
+              <h5>Types of Exercise</h5>
+              <p>Select types of exercises you are interested in</p>
+              <div class="exer-types">
+                <div class="exer-type">
+                  <input
+                    type="checkbox"
+                    name="exer-types"
+                    id="cardio"
+                    value="cardio"
+                  />
+                  <label for="adventure">Cardiovascular</label>
+                </div>
+                <div class="exer-type">
+                  <input
+                    type="checkbox"
+                    name="exer-types"
+                    id="str"
+                    value="str"
+                  />
+                  <label for="adventure">Strength</label>
+                </div>
+                <div class="exer-type">
+                  <input
+                    type="checkbox"
+                    name="exer-types"
+                    id="flex"
+                    value="flex"
+                  />
+                  <label for="adventure">Flexibility</label>
+                </div>
+                <div class="exer-type">
+                  <input
+                    type="checkbox"
+                    name="exer-types"
+                    id="balance"
+                    value="balance"
+                  />
+                  <label for="adventure">Balance</label>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="form-card">
             <div class="category">
               <input type="checkbox" name="cooking" id="cooking" />
@@ -445,9 +464,7 @@
               </div>
             </div>
           </div>
-          <button type="submit" id="submit-btn" onclick="saveURLParams()">
-            <p>Recommend!</p>
-          </button>
+          <button type="submit" id="submit-btn">Recommend!</button>
         </form>
       </section>
     </div>
@@ -461,7 +478,7 @@
     <!--Plugin JavaScript file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 
-    <script src="../js/app.js"></script>
+    <script src="../js/index.js"></script>
     <script src="../js/jquery.js"></script>
   </body>
 </html>
