@@ -27,13 +27,21 @@ header {
 } */
 
 @keyframes slideInFromLeft {
-  0% {transform: translateX(-100%);}
-  100% {transform: translateX(0);}
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* T I T L E */
@@ -41,7 +49,7 @@ header {
   margin-left: 270px;
   font-size: 40px;
   color: #003e65;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-weight: 500;
 }
 
@@ -55,7 +63,7 @@ header {
   text-align: right;
   margin-top: 2%;
   border-bottom: solid 1px #003e65;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   color: #003e65;
   padding-right: 48px;
   padding-bottom: 2px;
@@ -63,7 +71,7 @@ header {
 
 /* BLOCK LAYOUT */
 .wrapper {
-  display: grid; 
+  display: grid;
   grid-template-columns: 450px 450px;
   grid-gap: 18px;
   margin: 0% 15% 2% 18%;
@@ -81,7 +89,7 @@ header {
   text-decoration: none;
   font-weight: 400;
   color: black;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   box-shadow: 5px 5px rgba(222, 222, 222, 0.452);
   transition: height 0.5s;
   -webkit-transition: height 0.5s;
@@ -90,11 +98,11 @@ header {
 
 .cards:hover {
   transition-duration: 300ms;
-  height: 280px; 
+  height: 280px;
   opacity: 80%;
 }
 .cards > h3 {
-  margin: 14px 4px 3px 14px; 
+  margin: 14px 4px 3px 14px;
   font-size: 16px;
 }
 .cards > p {
@@ -106,7 +114,7 @@ header {
 .base {
   width: 455px;
   height: 100px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   padding: 14px;
 }
 .base > h3 {
@@ -129,8 +137,13 @@ img {
   /* margin-right: 14px;  */
 }
 .details {
+  display: block;
+  position: relative;
+  font-family: "Karla", sans-serif;
+  padding: 14px;
+  padding-top: 0;
   /* position: relative; */
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   /* padding: 14px; */
   /* padding-top: 0; */
   float: left;
@@ -157,7 +170,7 @@ img {
   width: max-content;
 }
 .tags {
-  width: max-content; 
+  width: max-content;
   position: inline-block;
   padding: 5px;
   margin-right: 10px;
@@ -183,7 +196,7 @@ img {
   width: 170px;
   height: 100px;
   text-align: center; */
-  /* margin: 20px;
+/* margin: 20px;
   margin-right: 30px; */
 /* } */
 /* .game {
@@ -201,13 +214,13 @@ img {
 } 
 .caption > * {
   /* border: solid 2px #ff4d4d;  */
-  /* padding: 10px; 
+/* padding: 10px; 
   position: relative;
   background-color:  #fffca7; 
   text-align: center;  */
-  /* width: 179px;  */
-  /* top: 15px;  */
-  /* text-decoration: none;
+/* width: 179px;  */
+/* top: 15px;  */
+/* text-decoration: none;
   color: #ff4d4d; */
 
 /* a {
