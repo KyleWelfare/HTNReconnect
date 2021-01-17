@@ -25,10 +25,10 @@ body {
 /* intro styling */
 
 .intro-container {
-  background: rgba(244, 162, 97, 1);
+  background: #fed9b7;
   width: 100%;
   height: 100vh;
-  color: rgb(51, 50, 50);
+  color: #003e65;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 10vh 60vh 30vh;
@@ -79,6 +79,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #003e65;
 }
 
 #form {
@@ -123,10 +124,11 @@ select {
   font-size: 1.6rem;
   font-weight: bold;
   transition: border 100ms ease;
+  color: #003e65;
 }
 
 select:hover {
-  border: 2px solid black;
+  border: 2px solid #003e65;
 }
 
 option {
@@ -139,7 +141,7 @@ option {
   margin: 50px 0 80px 0;
   /* max-width: 20%; */
   /* min-width: 20vw; */
-  background: rgba(244, 162, 97, 1);
+  background: #fed9b7;
   border: none;
   border-radius: 0.4rem;
   text-align: center;
@@ -148,11 +150,12 @@ option {
   padding: 4rem;
   font-family: "Roboto", sans-serif;
   transition: border, padding 250ms ease-in-out;
+  color: #003e65;
 }
 
 #submit-btn:hover {
-  background: rgba(244, 162, 97, 1);
-  border: 3px solid rgb(240, 128, 36);
+  background: #fed9b7;
+  border: 3px solid rgb(236, 162, 101);
   padding: 4.3rem;
   font-size: 1.9rem;
   transition: font-size 500ms ease;
@@ -231,8 +234,6 @@ option {
 
 .age-range-slider {
   width: 80%;
-  /* margin-bottom: 3em; */
-  align-self: center;
 }
 
 .cost-range-container {
@@ -242,25 +243,23 @@ option {
 }
 .cost-range-slider {
   width: 80%;
-  /* margin-bottom: 3em; */
-  align-self: center;
 }
 
 .irs--flat .irs-handle > i:first-child {
-  background-color: rgba(244, 162, 97, 1) !important;
+  background-color: #f8a557 !important;
 }
 .irs--flat .irs-bar {
-  background-color: rgba(244, 162, 97, 1) !important;
+  background-color: #f8a557 !important;
 }
 .irs--flat .irs-from,
 .irs--flat .irs-to,
 .irs--flat .irs-single {
-  background-color: rgba(244, 162, 97, 1) !important;
+  background-color: #f8a557 !important;
 }
 .irs--flat .irs-from:before,
 .irs--flat .irs-to:before,
 .irs--flat .irs-single:before {
-  border-top-color: rgba(244, 162, 97, 1) !important;
+  border-top-color: #f8a557 !important;
 }
 
 /* responsivenessstyling */
