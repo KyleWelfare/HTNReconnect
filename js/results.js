@@ -1,5 +1,7 @@
+//get url search string
 const queryString = window.location.search;
 
+//save url params as strings
 const urlParams = new URLSearchParams(queryString);
 
 //universal variables

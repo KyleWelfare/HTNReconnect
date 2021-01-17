@@ -19,29 +19,43 @@
   <body>
     <div class="container">
       <section class="intro-container">
+        <div class="intro-header">Welcome to Reconnect!</div>
+        <img
+          src="../images/intro-image.png"
+          alt="intro-img"
+          class="intro-image"
+        />
+        <div class="intro-descrip">
+          <p>
+            Times are tough. But as we push forward, we find ways to adapt.
+            Luckily for us, we live in a time where limitless potential lies at
+            our fingertips. Smartphones, tablets, personal computers, they are
+            what get us through the trying times, because they allow us to
+            connect with others. At Reconnect, our goal is to encourage and
+            spread this connection. Even when we’re stuck at home, there are so
+            many opportunities to better ourselves, spend time with our loved
+            ones, and learn new things.
+          </p>
+          <p>
+            Take a few minutes to fill out the form below. We’ll provide you
+            with a list of recommendations for fun, educational, exciting, or
+            collaborative activities you can do from the comfort of your own
+            home! Take some time to reconnect with friends, family, and
+            yourself, you deserve it!
+          </p>
+        </div>
         <div class="logo-container">
           <img src="../images/logo.png" alt="reconnect-logo" class="logo" />
-        </div>
-        <div class="intro-descrip">
-          <h2>Our Vision</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-            cupiditate odit ea incidunt quaerat molestias ab deleniti sequi
-            repellat maiores dolor quis accusantium quo magni iusto officiis,
-            nemo, impedit delectus natus aspernatur dolore corporis voluptate
-            inventore! Adipisci maiores ipsum eum excepturi aut omnis pariatur
-            numquam ad dicta rerum, consequuntur debitis delectus nostrum saepe
-            reiciendis facilis nesciunt, nisi quis. Animi, provident?
-            Consequatur, earum. Itaque illo quidem in, ipsam eos veritatis
-            cumque nesciunt cupiditate labore voluptate, porro fugit nihil,
-            dolorem qui? Quae, possimus. Minima blanditiis debitis doloremque.
-            Voluptate, veritatis quisquam eum explicabo maxime quas eaque
-            architecto iste iure ducimus provident. Tempora, distinctio!
-          </p>
+          <a
+            class="ca3-scroll-down-link ca3-scroll-down-arrow"
+            data-ca3_iconfont="ETmodules"
+            data-ca3_icon=""
+            id="scroll-arrow"
+          ></a>
         </div>
       </section>
       <section class="form-container">
-        <h1 class="form-header">Form Title</h1>
+        <h1 class="form-header">What would you like to do today?</h1>
         <form action="./results.html" method="get" id="form">
           <div class="form-card">
             <h5>Number of Participants</h5>
@@ -83,7 +97,7 @@
                 type="checkbox"
                 name="games"
                 id="games"
-                onchange="showHideGames(this.checked)"
+                onchange="showHideGameGenres(this.checked)"
               />
               <label for="games">Games</label>
             </div>
@@ -101,10 +115,10 @@
                 <input
                   type="checkbox"
                   name="game-genres"
-                  id="comedy"
-                  value="comedy"
+                  id="comedy-game"
+                  value="comedy-game"
                 />
-                <label for="comedy">Comedy</label>
+                <label for="comedy-game">Comedy</label>
               </div>
               <div class="game-genre-item">
                 <input
@@ -128,10 +142,10 @@
                 <input
                   type="checkbox"
                   name="game-genres"
-                  id="cooking"
-                  value="cooking"
+                  id="cooking-game"
+                  value="cooking-game"
                 />
-                <label for="cooking">Cooking</label>
+                <label for="cooking-game">Cooking</label>
               </div>
               <div class="game-genre-item">
                 <input
@@ -155,10 +169,10 @@
                 <input
                   type="checkbox"
                   name="game-genres"
-                  id="violent"
-                  value="violent"
+                  id="gore"
+                  value="gore"
                 />
-                <label for="violent">Violent</label>
+                <label for="gore">Gore</label>
               </div>
               <div class="game-genre-item">
                 <input
@@ -258,7 +272,7 @@
                     id="cardio"
                     value="cardio"
                   />
-                  <label for="adventure">Cardiovascular</label>
+                  <label for="cardio">Cardiovascular</label>
                 </div>
                 <div class="exer-type">
                   <input
@@ -267,7 +281,7 @@
                     id="str"
                     value="str"
                   />
-                  <label for="adventure">Strength</label>
+                  <label for="str">Strength</label>
                 </div>
                 <div class="exer-type">
                   <input
@@ -276,7 +290,7 @@
                     id="flex"
                     value="flex"
                   />
-                  <label for="adventure">Flexibility</label>
+                  <label for="flex">Flexibility</label>
                 </div>
                 <div class="exer-type">
                   <input
@@ -285,7 +299,7 @@
                     id="balance"
                     value="balance"
                   />
-                  <label for="adventure">Balance</label>
+                  <label for="balance">Balance</label>
                 </div>
               </div>
             </div>
@@ -293,94 +307,107 @@
 
           <div class="form-card">
             <div class="category">
-              <input type="checkbox" name="cooking" id="cooking" />
-              <label for="exercise">Cooking</label>
+              <input
+                type="checkbox"
+                name="cooking"
+                id="cooking"
+                onchange="showHideMealTypes(this.checked)"
+              />
+              <label for="cooking">Cooking</label>
             </div>
-            <h5>Types of Meals</h5>
-            <p>
-              Please select the types of meals you are interested in cooking
-            </p>
-            <div class="meal-types">
-              <div class="meal-type">
-                <input
-                  type="checkbox"
-                  name="meal-types"
-                  id="breakfast"
-                  value="breakfast"
-                />
-                <label for="breakfast">Breakfast</label>
-              </div>
-              <div class="exer-type">
-                <input
-                  type="checkbox"
-                  name="meal-types"
-                  id="lunch"
-                  value="lunch"
-                />
-                <label for="lunch">Lunch</label>
-              </div>
-              <div class="exer-type">
-                <input
-                  type="checkbox"
-                  name="meal-types"
-                  id="dinner"
-                  value="dinner"
-                />
-                <label for="dinner">Dinner</label>
-              </div>
-              <div class="exer-type">
-                <input
-                  type="checkbox"
-                  name="meal-types"
-                  id="dessert"
-                  value="dessert"
-                />
-                <label for="dessert">Dessert</label>
-              </div>
-              <div class="exer-type">
-                <input
-                  type="checkbox"
-                  name="meal-types"
-                  id="nut-free"
-                  value="nut-free"
-                />
-                <label for="nut-free">Nut-Free</label>
-              </div>
-              <div class="exer-type">
-                <input
-                  type="checkbox"
-                  name="meal-types"
-                  id="gluten-free"
-                  value="gluten-free"
-                />
-                <label for="gluten-free">Gluten-Free</label>
-              </div>
-              <div class="exer-type">
-                <input
-                  type="checkbox"
-                  name="meal-types"
-                  id="dairy-free"
-                  value="dairy-free"
-                />
-                <label for="dairy-free">Dairy-Free</label>
-              </div>
-              <div class="exer-type">
-                <input
-                  type="checkbox"
-                  name="meal-types"
-                  id="vegan"
-                  value="vegan"
-                />
-                <label for="vegan">Vegan</label>
+            <div class="meal-types-container">
+              <h5>Types of Meals</h5>
+              <p>
+                Please select the types of meals you are interested in cooking
+              </p>
+              <div class="meal-types">
+                <div class="meal-type">
+                  <input
+                    type="checkbox"
+                    name="meal-types"
+                    id="breakfast"
+                    value="breakfast"
+                  />
+                  <label for="breakfast">Breakfast</label>
+                </div>
+                <div class="meal-type">
+                  <input
+                    type="checkbox"
+                    name="meal-types"
+                    id="lunch"
+                    value="lunch"
+                  />
+                  <label for="lunch">Lunch</label>
+                </div>
+                <div class="meal-type">
+                  <input
+                    type="checkbox"
+                    name="meal-types"
+                    id="dinner"
+                    value="dinner"
+                  />
+                  <label for="dinner">Dinner</label>
+                </div>
+                <div class="meal-type">
+                  <input
+                    type="checkbox"
+                    name="meal-types"
+                    id="dessert"
+                    value="dessert"
+                  />
+                  <label for="dessert">Dessert</label>
+                </div>
+                <div class="meal-type">
+                  <input
+                    type="checkbox"
+                    name="meal-types"
+                    id="nut-free"
+                    value="nut-free"
+                  />
+                  <label for="nut-free">Nut-Free</label>
+                </div>
+                <div class="meal-type">
+                  <input
+                    type="checkbox"
+                    name="meal-types"
+                    id="gluten-free"
+                    value="gluten-free"
+                  />
+                  <label for="gluten-free">Gluten-Free</label>
+                </div>
+                <div class="meal-type">
+                  <input
+                    type="checkbox"
+                    name="meal-types"
+                    id="dairy-free"
+                    value="dairy-free"
+                  />
+                  <label for="dairy-free">Dairy-Free</label>
+                </div>
+                <div class="meal-type">
+                  <input
+                    type="checkbox"
+                    name="meal-types"
+                    id="vegan"
+                    value="vegan"
+                  />
+                  <label for="vegan">Vegan</label>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="form-card">
             <div class="category">
-              <input type="checkbox" name="mov-tv" id="mov-tv" />
-              <label for="games">Movies and TV</label>
+              <input
+                type="checkbox"
+                name="mov-tv"
+                id="mov-tv"
+                onchange="showHideMovTVGenres(this.checked)"
+              />
+              <label for="mov-tv">Movies and TV</label>
             </div>
-            <div class="mov-tv-genre-items">
+            <div id="mov-tv-genre-items">
               <div class="mov-tv-genre-item">
                 <input
                   type="checkbox"
