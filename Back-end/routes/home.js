@@ -25,7 +25,7 @@ router.post('/submitresults',async(req,res)=>{
     const mealTypes = req.body.mealTypes//array 
     const movTvGenres = req.body.movTvGenres//array 
     
-    
+    if (wantsGames)
     // try {
     //     // const specificGames;
     //     // if (req.body.numParticipants>18){
