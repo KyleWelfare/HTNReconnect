@@ -14,7 +14,7 @@ certain element display toggles and to integrate the ionRangeSlider.
 
 The back-end was done using Node.js, with MongoDB as the database, to store activity information.
 
-Design prototyping was done in Figma.
+Design prototyping was done in Figma. https://www.figma.com/file/BCvkOeG4O1kodhOABX1ivy/Reconnect?node-id=0%3A1
 
 ## How to Use It
 
