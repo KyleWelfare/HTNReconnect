@@ -1,6 +1,8 @@
 # Reconnect
 
-A remote activity remmondation Web App built in 36 hours for Hack the North 2020++.
+A remote activity remmondation Web App built in 36 hours for Hack the North 2020++. 
+
+Devpost link here: https://devpost.com/software/reconnect-zw73ik
 
 ## Motivation
 
