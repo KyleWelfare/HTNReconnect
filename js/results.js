@@ -8,7 +8,10 @@ const urlParams = new URLSearchParams(queryString);
 const numParticipants = parseInt(urlParams.get("participants"));
 
 const ageRange = urlParams.get("age_range");
-const ageRangeList = ageRange.match(/\d+/g);
+const ageRangeList = [];
+if (ageRange !== null) {
+  ageRangeList = ageRange.match(/\d+/g);
+}
 
 let minAge = 0;
 if (ageRangeList !== null) {
@@ -29,7 +32,10 @@ const wantsMovTv = urlParams.has("mov-tv");
 const gameGenres = urlParams.getAll("game-genres");
 
 const costRange = urlParams.get("cost_range");
-const costRangeList = costRange.match(/\d+/g);
+const costRangeList = [];
+if (costRange !== null) {
+  costRangeList = costRange.match(/\d+/g);
+}
 
 let minCost = 0;
 if (costRangeList !== null) {
@@ -91,80 +97,103 @@ const orphan = document.getElementById("orphan");
 const monsterHouse = document.getElementById("monsterHouse");
 const bandOfBrothers = document.getElementById("bandOfBrothers");
 
-//card name arrays
+// //card name arrays
+// let response_data = JSON.stringify(data);
+// console.log(response_data);
 
-//game card displays
-if (wantsGames === true) {
-  document.getElementById("games").style.display = "grid";
-  if (games.includes("Codenames Online")) {
-    codeNames.style.display = "block";
-  }
-  if (games.includes("Skribbl.io")) {
-    skribblIO.style.display = "block";
-  }
-  if (games.includes("Among Us")) {
-    amongUs.style.display = "block";
-  }
-  if (games.includes("Golf With Your Friends")) {
-    golfWithFriends.style.display = "block";
-  }
-  if (games.includes("PLAYERUNKWOWN'S BATTLEGROUNDS")) {
-    pubG.style.display = "block";
-  }
-  if (games.includes("Fall Guys")) {
-    fallGuys.style.display = "block";
-  }
-  if (games.includes("Sporcle Quizzes")) {
-    sporcle.style.display = "block";
-  }
-  if (games.includes("Trivia via Zoom")) {
-    trivia.style.display = "block";
-  }
-  if (games.includes("Overcooked 2")) {
-    overcooked.style.display = "block";
-  }
-} else {
-  document.getElementById("games").style.display = "none";
-}
+// //game card displays
+// if (wantsGames === true) {
+//   document.getElementById("games").style.display = "grid";
+//   if (games.includes("Codenames Online")) {
+//     codeNames.style.display = "block";
+//   }
+//   if (games.includes("Skribbl.io")) {
+//     skribblIO.style.display = "block";
+//   }
+//   if (games.includes("Among Us")) {
+//     amongUs.style.display = "block";
+//   }
+//   if (games.includes("Golf With Your Friends")) {
+//     golfWithFriends.style.display = "block";
+//   }
+//   if (games.includes("PLAYERUNKNOWN'S BATTLEGROUNDS")) {
+//     pubG.style.display = "block";
+//   }
+//   if (games.includes("Fall Guys")) {
+//     fallGuys.style.display = "block";
+//   }
+//   if (games.includes("Sporcle Quizzes")) {
+//     sporcle.style.display = "block";
+//   }
+//   if (games.includes("Trivia via Zoom")) {
+//     trivia.style.display = "block";
+//   }
+//   if (games.includes("Overcooked 2")) {
+//     overcooked.style.display = "block";
+//   }
+// } else {
+//   document.getElementById("games").style.display = "none";
+// }
 
-//exercises card displays
-if (wantsExercises === true) {
-  document.getElementById("exercises").style.display = "grid";
-  if (exercises.includes("Beginner Yoga")) {
-    yogaBeg.style.display = "block";
-  }
-  if (exercises.includes("Elder Yoga")) {
-    yogaEld.style.display = "block";
-  }
-  if (exercises.includes("Flexible Fast")) {
-    flexFast.style.display = "block";
-  }
-  if (exercises.includes("HIIT")) {
-    hiit.style.display = "block";
-  }
-  if (exercises.includes("Karate")) {
-    karate.style.display = "block";
-  }
-  if (exercises.includes("Taekwondo")) {
-    taekwondo.style.display = "block";
-  }
-  if (exercises.includes("Rasputin")) {
-    rasputin.style.display = "block";
-  }
-} else {
-  document.getElementById("exercises").style.display = "none";
-}
+// //exercises card displays
+// if (wantsExercises === true) {
+//   document.getElementById("exercises").style.display = "grid";
+//   if (exercises.includes("Yoga For Complete Beginners")) {
+//     yogaBeg.style.display = "block";
+//   }
+//   if (exercises.includes("Rainbow Yoga")) {
+//     yogaEld.style.display = "block";
+//   }
+//   if (exercises.includes("Stretches for the Inflexible!")) {
+//     flexFast.style.display = "block";
+//   }
+//   if (exercises.includes("Full Body Cardio HIIT Workout")) {
+//     hiit.style.display = "block";
+//   }
+//   if (exercises.includes("Shotokan Karate Follow Along Class")) {
+//     karate.style.display = "block";
+//   }
+//   if (exercises.includes("Taekwondo Follow Along Class")) {
+//     taekwondo.style.display = "block";
+//   }
+//   if (exercises.includes("Rasputin Just Dance")) {
+//     rasputin.style.display = "block";
+//   }
+// } else {
+//   document.getElementById("exercises").style.display = "none";
+// }
 
-//cooking card displays
-if (wantsCooking === true) {
-  document.getElementById("cooking").style.display = "grid";
-} else {
-  document.getElementById("cooking").style.display = "none";
-}
+// //cooking card displays
+// if (wantsCooking === true) {
+//   document.getElementById("cooking").style.display = "grid";
+//   if (exercises.includes("Yoga For Complete Beginners")) {
+//     yogaBeg.style.display = "block";
+//   }
+//   if (exercises.includes("Rainbow Yoga")) {
+//     yogaEld.style.display = "block";
+//   }
+//   if (exercises.includes("Stretches for the Inflexible!")) {
+//     flexFast.style.display = "block";
+//   }
+//   if (exercises.includes("Full Body Cardio HIIT Workout")) {
+//     hiit.style.display = "block";
+//   }
+//   if (exercises.includes("Shotokan Karate Follow Along Class")) {
+//     karate.style.display = "block";
+//   }
+//   if (exercises.includes("Taekwondo Follow Along Class")) {
+//     taekwondo.style.display = "block";
+//   }
+//   if (exercises.includes("Rasputin Just Dance")) {
+//     rasputin.style.display = "block";
+//   }
+// } else {
+//   document.getElementById("cooking").style.display = "none";
+// }
 
-//movie/tv card displays
-if (wantsMovTv === true) {
-  document.getElementById("movies").style.display = "grid";
-} else {
-  document.getElementById("movies").style.display = "none";
-}
+// //movie/tv card displays
+// if (wantsMovTv === true) {
+//   document.getElementById("movies").style.display = "grid";
+// } else {
+//   document.getElementById("movies").style.display = "none";
+// }
